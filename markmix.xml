@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/ajm/Desktop/mixer/markmix.sch</source>
+    <date>Wednesday, June 15, 2016 'PMt' 08:31:20 PM</date>
+    <tool>Eeschema 4.0.2-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>markmix.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U4">
+      <value>NJ3FD-V</value>
+      <libsource lib="cypress" part="NJ3FD-V"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>576003AD</tstamp>
+    </comp>
+    <comp ref="10K1">
+      <value>DUAL_POT</value>
+      <libsource lib="device" part="DUAL_POT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57600461</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>NJ3FD-V</value>
+      <libsource lib="cypress" part="NJ3FD-V"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>576005C7</tstamp>
+    </comp>
+    <comp ref="10K2">
+      <value>DUAL_POT</value>
+      <libsource lib="device" part="DUAL_POT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>576005CD</tstamp>
+    </comp>
+    <comp ref="10K3">
+      <value>DUAL_POT</value>
+      <libsource lib="device" part="DUAL_POT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57600691</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>0.25mm_Jack</value>
+      <libsource lib="audio" part="0.25mm_Jack"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>576201E7</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>0.25mm_Jack</value>
+      <libsource lib="audio" part="0.25mm_Jack"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57620289</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>0.25mm_Jack</value>
+      <libsource lib="audio" part="0.25mm_Jack"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>576202BA</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="audio" part="0.25mm_Jack">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">0.25mm_Jack</field>
+      </fields>
+      <pins>
+        <pin num="1" name="T" type="BiDi"/>
+        <pin num="2" name="R" type="BiDi"/>
+        <pin num="3" name="S" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="DUAL_POT">
+      <description>Potentionmetre</description>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">DUAL_POT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="cypress" part="NJ3FD-V">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">NJ3FD-V</field>
+      </fields>
+      <pins>
+        <pin num="1" name="T" type="BiDi"/>
+        <pin num="2" name="R" type="BiDi"/>
+        <pin num="3" name="S" type="BiDi"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="cypress">
+      <uri>/Users/ajm/Library/Application Support/kicad/library/cypress.lib</uri>
+    </library>
+    <library logical="audio">
+      <uri>/Users/ajm/Library/Application Support/kicad/library/audio.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/Users/ajm/Library/Application Support/kicad/library/device.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(10K2-Pad3)">
+      <node ref="10K2" pin="3"/>
+    </net>
+    <net code="2" name="Net-(10K1-Pad6)">
+      <node ref="10K1" pin="6"/>
+    </net>
+    <net code="3" name="Net-(10K1-Pad3)">
+      <node ref="10K1" pin="3"/>
+    </net>
+    <net code="4" name="Net-(10K1-Pad5)">
+      <node ref="10K1" pin="5"/>
+      <node ref="U4" pin="2"/>
+    </net>
+    <net code="5" name="Net-(10K2-Pad2)">
+      <node ref="U5" pin="1"/>
+      <node ref="10K2" pin="2"/>
+    </net>
+    <net code="6" name="Net-(10K2-Pad5)">
+      <node ref="10K3" pin="5"/>
+      <node ref="U5" pin="2"/>
+      <node ref="10K2" pin="5"/>
+    </net>
+    <net code="7" name="Net-(10K1-Pad2)">
+      <node ref="10K1" pin="2"/>
+      <node ref="U4" pin="1"/>
+      <node ref="10K3" pin="2"/>
+    </net>
+    <net code="8" name="Net-(10K3-Pad4)">
+      <node ref="U3" pin="2"/>
+      <node ref="10K3" pin="4"/>
+    </net>
+    <net code="9" name="GND">
+      <node ref="U4" pin="3"/>
+      <node ref="U5" pin="3"/>
+      <node ref="U1" pin="3"/>
+      <node ref="U2" pin="3"/>
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="10" name="Net-(10K3-Pad6)">
+      <node ref="10K3" pin="6"/>
+    </net>
+    <net code="11" name="Net-(10K3-Pad3)">
+      <node ref="10K3" pin="3"/>
+    </net>
+    <net code="12" name="Net-(10K2-Pad6)">
+      <node ref="10K2" pin="6"/>
+    </net>
+    <net code="13" name="Net-(10K2-Pad4)">
+      <node ref="U2" pin="2"/>
+      <node ref="10K2" pin="4"/>
+    </net>
+    <net code="14" name="Net-(10K2-Pad1)">
+      <node ref="U2" pin="1"/>
+      <node ref="10K2" pin="1"/>
+    </net>
+    <net code="15" name="Net-(10K1-Pad4)">
+      <node ref="U1" pin="2"/>
+      <node ref="10K1" pin="4"/>
+    </net>
+    <net code="16" name="Net-(10K1-Pad1)">
+      <node ref="U1" pin="1"/>
+      <node ref="10K1" pin="1"/>
+    </net>
+    <net code="17" name="Net-(10K3-Pad1)">
+      <node ref="U3" pin="1"/>
+      <node ref="10K3" pin="1"/>
+    </net>
+  </nets>
+</export>

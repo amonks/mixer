@@ -1,0 +1,86 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:channel-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 3.5mm_Jack U101
+U 1 1 576249F8
+P 1200 1400
+F 0 "U101" H 1200 1600 60  0000 C CNN
+F 1 "3.5mm_Jack" H 1200 1200 60  0000 C CNN
+F 2 "" H 2350 1100 60  0000 C CNN
+F 3 "" H 2350 1100 60  0000 C CNN
+	1    1200 1400
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 2200 1150 700  700 
+U 576276A1
+F0 "tone" 60
+F1 "tone.sch" 60
+F2 "IN+" I L 2200 1300 60 
+F3 "IN-" I L 2200 1400 60 
+F4 "OUT+" I R 2900 1300 60 
+F5 "OUT-" I R 2900 1400 60 
+F6 "V-" I L 2200 1700 60 
+F7 "V+" I L 2200 1600 60 
+$EndSheet
+Wire Wire Line
+	1400 1300 2200 1300
+Wire Wire Line
+	2200 1400 1400 1400
+Text GLabel 1400 1500 2    60   Input ~ 0
+GND
+$Comp
+L CONN_02X12 P?
+U 1 1 57627CEE
+P 4250 1350
+F 0 "P?" H 4250 2000 50  0000 C CNN
+F 1 "CONN_02X12" V 4250 1350 50  0000 C CNN
+F 2 "" H 4250 150 50  0000 C CNN
+F 3 "" H 4250 150 50  0000 C CNN
+	1    4250 1350
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,4 @@
+#,Designator,Quantity,Value,Footprint,"Digi-Key (cut tape)",Mouser Part Number,Manufacturer Part Number,Comments
+1,"U1, U2, U3, U4, U5",5,,0.25-jack,,568-RJ3VM-D1,RJ3VM-D1,
+2,"10K1, 10K2, 10K3",3,,alps-dual-gang-vertical-pot-RK12L12C0A0G,,688-RK12L12C0A0G,RK12L12C0A0G,
+1,"R1, R2",2,,"Resistors_ThroughHole:Resistor_Horizontal_RM10mm",,660-MF1/4DCT52A2000F,MF1/4DCT52A2000F,

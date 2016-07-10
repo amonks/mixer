@@ -1,0 +1,8 @@
+Reference, Value, Footprint,Mouser Part Number,quantity
+CON101,BARREL_JACK,audio:161-0725-E,161-0725-E,1
+U105,TRS_Jack,audio:0.25-jack,568-RJ3VM-D1,8
+s1,pdip socket,audio:PDIP-8,575-113308,6
+U701,NE5532,audio:PDIP-8,595-NE5532P,6
+R113,15k,audio:Resistor_Horizontal_RM10mm,660-MF1/4DCT52R1502F,16
+R201,10k,audio:Resistor_Horizontal_RM10mm,660-MS1/4DCT52R1002,36
+RV113,100k,audio:RK09D117000C,688-RK09D117000C,16
